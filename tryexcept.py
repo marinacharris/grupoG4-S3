@@ -1,10 +1,8 @@
 try:
-    num = int(input('Digite un numero entero:\n'))
-    print(num)
-#   print(x)
-    
+    numero = int(input("Digite un número:\n"))
+    print(numero)
+    #print(x)
 except ValueError:
-    print('digite solo números')
-
+    print("Usted debe digitar solamente números, no se permiten letras ni caracteres especiales")
 except NameError:
-    print('Por favor escriba bien su código')
+    print("Por favor declare todas las variables")   

@@ -1,41 +1,29 @@
-# Los diccionarios son estructuras de datos que se utilizan para 
-# almacenar valores en pares clave-valor
-# ejemplo->> 'nombre': 'Carlos'
-# Son mutables
-# Se puede decir son indexados por llave
-
-
+# Es una estructura de datos que se utilizan para almacenar valores 
+# de la forma llave-valor, ejemplo 'Nombre':'Carlos'
+# Los diccionarios son indexados a traves de una llave
+# Los diccionarios son mutables
 
 
 datosPersonales = {
-    "nombre": 'Carlos',
-    'apellido': 'Gutiérrez',
-    'email': 'cgutierrez@gmail.com',
-    'edad': 45,
-    'accesoAR': True,
-    'dirección': 'Calle 20 58 99',
-    'reconocimientos': {2019: False,2020: False,2021: True}
+    'Nombre':'Carlos',
+    'Apellido': 'Gutiérrez', 
+    'edad': 30,
+    'casado': True,
+    'ventas': {
+        1:10,
+        2:30,
+        3:2,
+        4:15
+    }  
 }
-print(type(datosPersonales))
-print(type(datosPersonales['reconocimientos']))
-print(type(datosPersonales['edad']))
-print(datosPersonales['dirección'])
-# no se puede:  print(datosPersonales[5])
+datosPersonales['casado'] = False
+datosPersonales['ventas'][3] = 5
+print(datosPersonales)
+print(type(datosPersonales), type(datosPersonales['casado']))
+print(datosPersonales['ventas'][3])
 
-for i in datosPersonales:
+for i in datosPersonales: # i toma los valores de las llaves
     print(i)
-    
+
 for i in datosPersonales:
     print(datosPersonales[i])
-    
-print(datosPersonales)
-    
-datosPersonales['edad'] = 38
-print("-------------------------------------")
-print(datosPersonales)
-
-print(datosPersonales.pop('dirección')) # elimina una llave
-print(datosPersonales)
-print("----------------------------------------------")
-datosPersonales.setdefault('dirección','cra 5 89 20') #agrega una llave al final
-print(datosPersonales)

@@ -1,25 +1,24 @@
-# Realice un programa que lea n números enteros y diga cuál es el mayor
-# número y cuál es el menor número
-# Datosde entrada-> n: cantidad de números
-#                   numero: cada número que va ingresando el usuario
-# Datos de salida-> mayor: el mayor número
-#                   menor: el menor número
-n = int(input("Digite la cantidad de números que desea ingresar\n"))
-for i in range(1,n+1):
-    numero = int(input(f"Digite el número {i}\n"))
-    if i == 1:
+# Realice un ejercicio que lea n numeros enteros y nos diga cual
+# es el mayor y el menor de ellos. 
+# Datos de entrada->    n: cantidad de números
+#                       numero: cada uno de los números ingresados por el usuario
+# Datos de salida->     mayor: el mayor número
+# Datos                 menor: el menor número
+
+n = int(input("Digite la cantidad de numeros que desea ingresar\n"))
+for i in range(n): # la variable i va a contar desde 0 hasta n-1
+    numero = int(input(f"Digite el número {i+1}:\n"))
+    if i == 0:
         mayor = numero
-        menor = numero 
-    else: 
+        menor = numero
+    else:
         if numero > mayor:
             mayor = numero
         if numero < menor:
             menor = numero
-print(f"El mayor de los {n} numeros ingresados es {mayor}")
-print(f"El menor de los {n} numeros ingresados es {menor}")
+print(f"El mayor de los {n} números ingresados es {mayor}")
+print(f"El menor de los {n} números ingresados es {menor}")
+
     
-      
-    
-    
-    
+ 
 

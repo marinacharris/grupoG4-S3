@@ -1,19 +1,26 @@
-# son indexadas, son inmutables
-ciudad = "Cartagena"
-print(ciudad[2])
-print(len(ciudad))
-#rebanadas
-print(ciudad[2:4])
-print(ciudad[:5])
-print(ciudad[3:])
-print(ciudad[2:7:2])
-print(ciudad[:3]+ciudad[5:])
-print(ciudad.replace('ta', ''))
-print(ciudad)
-ciudad = "Barranquilla"
-print(ciudad)
+# las cadenas son indexadas de forma numérica
+# las cadenas son inmutables
+lenProg = "Python"
+print(lenProg[3])
+print(lenProg[-1])
+lenProg = "Java es genial"
+print(lenProg)
+# lenProg[0]='p', esto NO se puede, las cadenas son inmutables
+print(len(lenProg))
+print(lenProg[4])
+cadenaVacia=""
+print(len(cadenaVacia))
+print(lenProg.count('a'))
+fruta = 'manzana'
+print(fruta[2:5])
+print(fruta[:5])
+print(fruta[2:])
+print(fruta[2:5:2])
+print(fruta.replace('man', 'tab'))
+print(fruta)
 
-for i in ciudad: # la variable i va tomando el valor de cada caracter
+for i in fruta: # la variable i va tomando los valores de los carateres de fruta
     print(i)
 
-print('Bar' in ciudad)
+
+
